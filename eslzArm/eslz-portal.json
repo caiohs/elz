@@ -51,17 +51,6 @@
                             "type": "Microsoft.Common.ResourceScope"
                         },
                         {
-                            "name": "getSubscriptions",
-                            "type": "Microsoft.Solutions.ArmApiControl",
-                            "request": {
-                                "method": "POST",
-                                "path": "providers/Microsoft.ResourceGraph/resources?api-version=2021-03-01",
-                                "body": {
-                                    //"query": "ResourceContainers | where type =~ 'microsoft.resources/subscriptions' | where properties.state =~ 'enabled' | project label=tostring(name), description=subscriptionId, value=subscriptionId | order by label asc"
-                                }
-                            }
-                        },
-                        {
                             "name": "getLocations",
                             "type": "Microsoft.Solutions.ArmApiControl",
                             "request": {
